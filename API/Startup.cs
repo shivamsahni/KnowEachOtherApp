@@ -61,6 +61,7 @@ namespace API
             //cors configuration
             app.UseCors(policy=>policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));
 
+            //Authentication using jwt token added
             app.UseAuthentication();
 
             app.UseAuthorization();
